@@ -1,0 +1,17 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+body {
+    font-family: 'Poppins';
+}
+
+.sep {
+    display: flex;
+    flex-direction: row;
+}
