@@ -1,3 +1,6 @@
+Este é um projeto para calcular quantos anos, meses e dias alguém possui, apenas com a data de nascimento, se baseando no dia atual.
+Foi utiliza HTML, CSS e JavaScript com JQuery.
+
 # Frontend Mentor - Age calculator app
 
 ![Design preview for the Age calculator app coding challenge](./design/desktop-preview.jpg)
