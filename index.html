@@ -2,50 +2,68 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="./style.css">
+   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="./style.css">
 
-  <title>Age calculator app</title>
+   <title>Age calculator app</title>
 </head>
 
 <body>
-  <div>
-    <div>
-      Day
-      DD
+   <div class="container">
+      <div class="box">
+         <div class="inputs">
+            <div class="in1">
+               Day
+               <input type="num" max="31" min="1" maxlength="2" class="inptDay" placeholder="DD">
+            </div>
 
-      Month
-      MM
+            <div class="in1">
+               Month
+               <input type="num" max="31" min="1" maxlength="2" class="inptDay" placeholder="MM">
+            </div>
 
-      Year
-      YYYY
-    </div>
-    <div class="sep">
-      <hr>
-      <button><img src="./assets/images/icon-arrow.svg" alt=""></button>
-    </div>
-    <div>
-      -- years
-      -- months
-      -- days
-    </div>
-  </div>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a
-      href="https://www.linkedin.com/in/bruno-henrique-a88961208?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BeSckOwxiQVS1yfyZfTVhhw%3D%3D">Bruno
-      H.</a>.
-  </div>
+            <div class="in1">
+               Year
+               <input type="num" max="31" min="1" maxlength="2" class="inptDay" placeholder="YYYY">
+            </div>
+
+         </div>
+         <div class="sep">
+            <div class="line"></div>
+            <button><img src="./assets/images/icon-arrow.svg" alt=""></button>
+         </div>
+         <div class="outputs">
+            <div>
+               <span class="res">--</span>
+               <span>years</span>
+            </div>
+            <div>
+               <span class="res">--</span>
+               <span>months</span>
+            </div>
+            <div>
+               <span class="res">--</span>
+               <span>days</span>
+            </div>
+         </div>
+      </div>
+      <div class="attribution">
+         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+         Coded by <a
+            href="https://www.linkedin.com/in/bruno-henrique-a88961208?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BeSckOwxiQVS1yfyZfTVhhw%3D%3D">Bruno
+            H.</a>.
+      </div>
+   </div>
 </body>
 
 </html>
