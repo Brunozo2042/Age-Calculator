@@ -23,36 +23,39 @@
       <div class="box">
          <div class="inputs">
             <div class="in1">
-               Day
-               <input type="num" max="31" min="1" maxlength="2" class="inptDay" placeholder="DD">
+               <span id="lblDay" class="lbl">DAY</span>
+               <input type="num" max="31" min="1" maxlength="2" class="inpt" id="inptDay" placeholder="DD">
+               <div class="error" id="errorDay"></div>
             </div>
 
             <div class="in1">
-               Month
-               <input type="num" max="31" min="1" maxlength="2" class="inptDay" placeholder="MM">
+               <span id="lblMonth" class="lbl">MONTH</span>
+               <input type="num" max="12" min="1" maxlength="2" class="inpt" id="inptMonth" placeholder="MM">
+               <div class="error" id="errorMonth"></div>
             </div>
 
             <div class="in1">
-               Year
-               <input type="num" max="31" min="1" maxlength="2" class="inptDay" placeholder="YYYY">
+               <span id="lblYear" class="lbl">YEAR</span>
+               <input type="num" min="1" maxlength="4" class="inpt" id="inptYear" placeholder="YYYY">
+               <div class="error" id="errorYear"></div>
             </div>
 
          </div>
          <div class="sep">
             <div class="line"></div>
-            <button><img src="./assets/images/icon-arrow.svg" alt=""></button>
+            <button><img onclick="calculate()" src="./assets/images/icon-arrow.svg" alt=""></button>
          </div>
          <div class="outputs">
             <div>
-               <span class="res">--</span>
+               <span class="res" id="resYear">--</span>
                <span>years</span>
             </div>
             <div>
-               <span class="res">--</span>
+               <span class="res" id="resMonth">--</span>
                <span>months</span>
             </div>
             <div>
-               <span class="res">--</span>
+               <span class="res" id="resDay">--</span>
                <span>days</span>
             </div>
          </div>
@@ -64,6 +67,8 @@
             H.</a>.
       </div>
    </div>
+
+   <script src="./script.js"></script>
 </body>
 
 </html>
