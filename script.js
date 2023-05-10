@@ -8,6 +8,10 @@ var inptDay = $("#inptDay")
 var inptMonth = $("#inptMonth")
 var inptYear = $("#inptYear")
 
+var resDayObj = $("#resDay")
+var resMonthObj = $("#resMonth")
+var resYearObj = $("#resYear")
+
 inptYear.attr("max", anoA);
 
 //boolean
@@ -60,9 +64,11 @@ function calculate() {
 
         calcularIdade();
 
-        $("#resYear").text(resYear)
-        $("#resMonth").text(resMonth)
-        $("#resDay").text(resDay)
+        $("#resYear").text(resYear).hide().fadeIn(1000);
+        setTimeout(() => $("#resMonth").text(resMonth).hide().fadeIn(1000), 500)
+        setTimeout(() => $("#resDay").text(resDay).hide().fadeIn(1000), 1000)
+
+
     }
 
 }
