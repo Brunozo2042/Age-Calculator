@@ -61,8 +61,12 @@ input {
     border: 1px solid rgb(148, 148, 148);
 }
 
-input:focus {
-    border: 2px solid hsl(259, 100%, 65%);
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
 }
 
 .error {
@@ -78,7 +82,7 @@ input:focus {
 }
 
 .sep div {
-    background-color: grey;
+    background-color: rgb(225, 225, 225);
     height: 1px;
     width: 100%;
 }
