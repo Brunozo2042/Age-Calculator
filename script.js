@@ -67,13 +67,13 @@ function calculate() {
         $("#resYear").text(resYear).hide().fadeIn(1000);
         setTimeout(() => $("#resMonth").text(resMonth).hide().fadeIn(1000), 500)
         setTimeout(() => $("#resDay").text(resDay).hide().fadeIn(1000), 1000)
-
-
     }
-
 }
 
 function calcularIdade() {
+
+    //Nessa função, iremos pegar a data do aniversário e ir adicionando os dias, 1 a 1, até chegar na data atual
+    //Assim, teremos a diferença entre as duas datas, que nada mais é que a idade do usuário
 
     while (month < mesA - 1 || year < anoA) {
         month++
@@ -98,6 +98,11 @@ function calcularIdade() {
     }
     else {
         resDay = diasNoMes(mesA - 1, anoA) + diaA - day
+    }
+
+    if (resMonth == 12) {
+        resMonth = 0
+        resYear++
     }
 
 }
@@ -163,10 +168,6 @@ function consiste() {
             $("#lblYear").css("color", "hsl(0, 100%, 67%)");
             $("#errorDay").html("Must be in the past!");
         }
-
-        // console.log(day)
-        // console.log(month)
-        // console.log(year)
 
         //Verifica se a data existe
         if (day > diasNoMes(month, day)) {

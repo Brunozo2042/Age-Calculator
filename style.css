@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
@@ -34,6 +38,37 @@ body {
     border-radius: 20px 20px 250px 20px;
 }
 
+@media (max-width:880px) {
+    .box {
+        width: 600px;
+    }
+}
+
+@media (max-width:720px) {
+    .box {
+        width: 500px;
+    }
+}
+
+@media (max-width:600px) {
+    .box {
+        width: 400px;
+    }
+
+    .in1 input {
+        width: 90px;
+        padding: 15px;
+    }
+
+    .outputs div {
+        font-size: 55px;
+    }
+
+    .in1 .error {
+        font-size: 12px;
+    }
+}
+
 .inputs {
     display: flex;
     justify-content: space-around;
@@ -61,12 +96,13 @@ input {
     border: 1px solid rgb(148, 148, 148);
 }
 
-input[type=number]::-webkit-inner-spin-button { 
+input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
-input[type=number] { 
-   -moz-appearance: textfield;
-   appearance: textfield;
+
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
 }
 
 .error {
