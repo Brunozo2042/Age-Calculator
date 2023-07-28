@@ -36,7 +36,7 @@ Ainda haviam alguns detalhes a se levar em conta:
   - 2(não bissesto): 28
   - 2(bissesto): 29
 
-### 🛠 Tecnologias
+## 🛠 Tecnologias
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
